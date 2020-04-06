@@ -4,7 +4,7 @@ from django.utils import timezone
 
 
 
-# Create your views here.
+
 def list(request):
     posts = Post.objects.all()
-    return render(request, 'blog.html', {'posts': posts})
+    return render(request, 'blogpost.html', {'posts': posts})
